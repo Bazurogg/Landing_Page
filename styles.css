@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This will make the gradient extend to your content height otherwise it will be limited to just the window height. */
+html {
+
+    min-height: 100%;
+
+}
+
+body {
+    background: radial-gradient(rgb(139,195, 245), #1294b8);
+}
+
+.backgrnd-img{
+    width: 70%;
+}
