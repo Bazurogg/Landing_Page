@@ -8,13 +8,30 @@
 html {
 
     min-height: 100%;
+    font-family: Poppins;
 
 }
 
 body {
     background: radial-gradient(rgb(139,195, 245), #1294b8);
 }
+/* -------------------- HEAD ---------------------- */
 
-.backgrnd-img{
-    width: 70%;
+
+
+/* -------------------- MAIN ---------------------- */
+
+.main-container {
+
+    display: inline-flex;
+
+}
+
+.contenttext-container {
+    padding-top:50px;
+}
+
+.backgrnd-img {
+    width: 100%;
+    
 }
