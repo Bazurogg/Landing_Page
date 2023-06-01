@@ -16,19 +16,74 @@ body {
     background: radial-gradient(rgb(139,195, 245), #1294b8);
 }
 /* -------------------- HEAD ---------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+}
 
+h1 {
+    color:white;
+}
 
+.navbar-top {
+    list-style: none;
+}
+
+li {
+    float: left;
+    margin-left: 4px;
+    color: white;
+    text-align:justify;
+}
+
+.icones-container{
+    margin-right: 50px;
+    
+}
+
+.fa-brands {
+    padding-left: 15px;
+    
+}
 
 /* -------------------- MAIN ---------------------- */
 
 .main-container {
-
     display: inline-flex;
 
 }
 
 .contenttext-container {
-    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    text-align: justify;
+}
+
+p1, p2 {
+    padding: 0 50px;
+}
+
+p1 {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+p2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#email-submit {
+    border-style: none;
+    border-radius: 20px;
+    margin: 0 50px;
+    padding: 10px 0;
+}
+
+.backimage-container {
+    width: 170%;
 }
 
 .backgrnd-img {
