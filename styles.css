@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -14,9 +15,27 @@ html {
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background: radial-gradient(rgb(139,195, 245), #1294b8);
 }
+
+.master-container {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-page {
+    background: white;
+}
+
 /* -------------------- HEAD ---------------------- */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,7 +43,7 @@ header {
 
 h1 {
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 130px;
     font-weight: bolder;
     color:white;
 }
@@ -35,7 +54,7 @@ h1 {
 }
 
 li {
-    font-size: 12px;
+    font-size: 16px;
     float: left;
     margin: 0 9px;
     color: white;
@@ -44,7 +63,7 @@ li {
 
 .icones-container{
     margin-top: 25px;
-    margin-right: 50px;
+    margin-right: 120px;
     
 }
 
@@ -53,19 +72,24 @@ li {
     
 }
 
+
+
+
 /* -------------------- MAIN ---------------------- */
 
 .main-container {
     margin-top: 60px;
     display: inline-flex;
+    margin-left: 80px;
 
 }
 
 .contenttext-container {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: justify;
+
 }
 
 p1, p2 {
@@ -74,13 +98,13 @@ p1, p2 {
 
 p1 {
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 52px;
 }
 
 p2 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 16px;
     white-space:normal;
 }
 
@@ -124,6 +148,9 @@ p2 {
 
 .backgrnd-img {
     padding-top: 30px;
-    width: 90%;
+    width: 85%;
     
 }
+
+
+/* -------------------- FOOTER ---------------------- */
