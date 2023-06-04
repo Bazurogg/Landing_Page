@@ -23,15 +23,21 @@ body {
 .master-container {
     width: 100%;
     height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 section {
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .card-page {
     background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* -------------------- HEAD ---------------------- */
@@ -48,6 +54,10 @@ h1 {
     color:white;
 }
 
+h2 {
+    font-weight: bold;
+}
+
 .navbar-top {
     margin-top: 25px;
     list-style: none;
@@ -59,20 +69,33 @@ li {
     margin: 0 9px;
     color: white;
     text-align:justify;
+    transition: 0.8s;
 }
 
-.icones-container{
+li:hover {
+    cursor: pointer;
+    opacity: 45%;
+    transition-timing-function: ease-out;
+}
+
+
+.icones-container {
     margin-top: 25px;
     margin-right: 120px;
-    
+
 }
+
 
 .fa-brands {
     padding-left: 15px;
-    
+    transition: 0.8s;  
 }
 
-
+.fa-brands:hover {
+    cursor: pointer;
+    opacity: 45%;
+    transition-timing-function: ease-out;
+}
 
 
 /* -------------------- MAIN ---------------------- */
@@ -108,6 +131,11 @@ p2 {
     white-space:normal;
 }
 
+p3 {
+    text-align: center;
+    color: lightslategray;
+}
+
 .forminput-mail {
     display: flex;
     flex-direction: row;
@@ -135,11 +163,17 @@ p2 {
     background-color: #1294b8;
     border-style: none;
     border-radius: 20px;
-    padding: 6px 10px;
+    padding: 10px 30px;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 12px;
     color: white;
+    transition: 0.8s;
+}
 
+.sub-btn:hover {
+    cursor: pointer;
+    background-color: #20b7e1;
+    transition-timing-function: ease-out;
 }
 
 .backimage-container {
