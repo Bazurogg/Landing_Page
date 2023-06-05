@@ -35,9 +35,14 @@ section {
 
 .card-page {
     background: white;
+}
+
+.cardpage-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
+    
 }
 
 /* -------------------- HEAD ---------------------- */
@@ -54,9 +59,11 @@ h1 {
     color:white;
 }
 
-h2 {
-    font-weight: bold;
+.title {
+    font-weight: bolder;
+    font-size: 30px;
 }
+
 
 .navbar-top {
     margin-top: 25px;
@@ -136,6 +143,13 @@ p2 {
 p3 {
     text-align: center;
     color: lightslategray;
+    margin-top: 15px;
+}
+
+p4 {
+    text-align: center;
+    color: lightslategray;
+    margin-top: 15px;
 }
 
 .forminput-mail {
@@ -190,6 +204,7 @@ p3 {
 
 .cards-container {
     display: flex;
+    margin-bottom: 190px;
 }
 
 .card {
@@ -197,6 +212,27 @@ p3 {
     height: 300px;
     border-radius: 10px;
     background: radial-gradient(rgb(139,195, 245), #1294b8);
+    margin-top: 70px;
+    transition: 0.8s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition-timing-function: ease-out;
+}
+
+.card.card-01 {
+    box-shadow: 2px 10px 35px 2px rgba(160, 160, 160, 0.8);
+}
+
+.card.card-02 {
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0px 10px 35px 2px rgba(160, 160, 160, 0.8);
+
+}
+.card.card-03 {
+    box-shadow: -2px 10px 35px 2px rgba(160, 160, 160, 0.8);
 }
 
 .card-content {
@@ -210,16 +246,22 @@ i.card-icon {
     font-size: 35px;
 }
 
-.card-title {
+.card-text {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.title-card {
     color: white;
     font-size: 20px;
     font-weight: 500;
 }
 
-.text-card {
+.p-card {
     color: white;
     font-size: 12px;
-    text-align: center;
+    margin-top: 15px;
+    padding: 0 14px;
 }
 
 /* -------------------- FOOTER ---------------------- */
