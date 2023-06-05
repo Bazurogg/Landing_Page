@@ -5,6 +5,8 @@
 }
 
 
+/*------------------------------------- M A S T E R ---------------------------------------------*/
+
 html {
     
     /* This will make the gradient extend to your content height otherwise it will be limited to just the window height. */
@@ -33,19 +35,9 @@ section {
     scroll-snap-align: start;
 }
 
-.card-page {
-    background: white;
-}
 
-.cardpage-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    
-}
+/*------------------------------------- H O M E / SECTION ---------------------------------------------*/
 
-/* -------------------- HEAD ---------------------- */
 
 header {
     display: flex;
@@ -59,10 +51,6 @@ h1 {
     color:white;
 }
 
-.title {
-    font-weight: bolder;
-    font-size: 30px;
-}
 
 
 .navbar-top {
@@ -89,7 +77,7 @@ li:hover {
 .icones-container {
     margin-top: 25px;
     margin-right: 120px;
-
+    
 }
 
 
@@ -104,14 +92,11 @@ li:hover {
     transition-timing-function: ease-out;
 }
 
-
-/* -------------------- MAIN ---------------------- */
-
 .main-container {
     margin-top: 60px;
     display: inline-flex;
     margin-left: 80px;
-
+    
 }
 
 .contenttext-container {
@@ -120,7 +105,7 @@ li:hover {
     margin-top: 120px;
     text-align: justify;
     padding: 0 124px;
-
+    
 }
 
 p1, p2 {
@@ -138,18 +123,6 @@ p2 {
     margin-bottom: 20px;
     font-size: 16px;
     white-space:normal;
-}
-
-p3 {
-    text-align: center;
-    color: lightslategray;
-    margin-top: 15px;
-}
-
-p4 {
-    text-align: center;
-    color: lightslategray;
-    margin-top: 15px;
 }
 
 .forminput-mail {
@@ -201,6 +174,41 @@ p4 {
     width: 75%;
     
 }
+
+
+
+/*------------------------------------- C A R D / SECTION ---------------------------------------------*/
+
+
+.card-page {
+    background: white;
+}
+
+.cardpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+.title-card {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+p3 {
+    text-align: center;
+    color: lightslategray;
+    margin-top: 15px;
+}
+
+p4 {
+    text-align: center;
+    color: lightslategray;
+    margin-top: 15px;
+}
+
 
 .cards-container {
     display: flex;
@@ -264,4 +272,65 @@ i.card-icon {
     padding: 0 14px;
 }
 
-/* -------------------- FOOTER ---------------------- */
+
+
+
+/*------------------------------------- T E A M / SECTION ---------------------------------------------*/
+
+.team-page {
+    background-color: white;
+}
+
+.teampage-toptitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.title-team {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+p5 {
+    text-align: center;
+    color: lightslategray;
+    margin-top: 15px;
+}
+
+
+.team-stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardpeople-image {
+    width: 150px;
+    height: 150px;
+}
+
+.cardteam-container {
+    display: flex;
+   justify-content:center;
+   margin-top: 20px;
+}
+ 
+.cardpeople-image .team-ppl {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
