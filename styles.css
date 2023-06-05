@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 
@@ -296,7 +296,7 @@ i.card-icon {
     text-align: center;
 }
 
-.p5 {
+p5 {
     text-align: center;
     color: silver;
     margin-top: 15px;
@@ -323,7 +323,7 @@ i.card-icon {
 }
 
 .stat-title {
-    font-size: 12px;
+    font-size: 14px;
     color: silver;
 
 }
@@ -332,6 +332,8 @@ i.card-icon {
     width: 230px;
     height: 230px;
     text-align: center;
+    /* overflow: hidden; */
+    border-radius: 50%;
 }
 
 .cardteam-container {
@@ -345,10 +347,25 @@ i.card-icon {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.8s;
+}
+
+.cardpeople-image .team-ppl:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.1);
+    transition-timing-function: ease-out;
+}
+
+.icon-ppl {
+
 }
 
 figcaption, span{
     border: none;
+    text-align: center;
 }
 
 span.ppl-post {
@@ -356,7 +373,7 @@ span.ppl-post {
     font-size: 13px;
 }
 
-span.ppl-name {
-    font-weight: bold;
+figcaption {
+    margin-top: 10px;
 }
 
