@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 
@@ -103,7 +104,7 @@ li:hover {
     display: flex;
     flex-direction: column;
     margin-top: 120px;
-    text-align: justify;
+    text-align: left;
     padding: 0 124px;
     
 }
@@ -114,7 +115,7 @@ p1, p2 {
 
 p1 {
     font-weight: bolder;
-    font-size: 52px;
+    font-size: 3em;
     word-spacing: normal;
 }
 
@@ -192,7 +193,8 @@ p2 {
     
 }
 
-.title-card {
+.title-cardsection {
+    color: black;
     font-weight: bolder;
     font-size: 30px;
 }
@@ -296,7 +298,7 @@ i.card-icon {
 
 p5 {
     text-align: center;
-    color: lightslategray;
+    color: silver;
     margin-top: 15px;
 }
 
@@ -312,17 +314,30 @@ p5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.stat-nbr {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stat-title {
+    font-size: 12px;
+    color: silver;
+
 }
 
 .cardpeople-image {
-    width: 150px;
-    height: 150px;
+    width: 230px;
+    height: 230px;
+    text-align: center;
 }
 
 .cardteam-container {
     display: flex;
-   justify-content:center;
-   margin-top: 20px;
+   justify-content: space-evenly;
+   margin-top: 40px;
 }
  
 .cardpeople-image .team-ppl {
@@ -332,5 +347,16 @@ p5 {
     border-radius: 50%;
 }
 
+figcaption, span{
+    border: none;
+}
 
+span.ppl-post {
+    color: silver;
+    font-size: 13px;
+}
+
+span.ppl-name {
+    font-weight: bold;
+}
 
