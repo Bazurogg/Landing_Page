@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: radial-gradient(rgb(139,195, 245), #1294b8);
 }
@@ -28,7 +28,7 @@ body {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -110,8 +110,9 @@ li:hover {
 .contenttext-container {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 120px;
     text-align: justify;
+    padding: 0 124px;
 
 }
 
@@ -122,6 +123,7 @@ p1, p2 {
 p1 {
     font-weight: bolder;
     font-size: 52px;
+    word-spacing: normal;
 }
 
 p2 {
@@ -182,9 +184,42 @@ p3 {
 
 .backgrnd-img {
     padding-top: 30px;
-    width: 85%;
+    width: 75%;
     
 }
 
+.cards-container {
+    display: flex;
+}
+
+.card {
+    width:300px;
+    height: 300px;
+    border-radius: 10px;
+    background: radial-gradient(rgb(139,195, 245), #1294b8);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+i.card-icon {
+    font-size: 35px;
+}
+
+.card-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-card {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
 
 /* -------------------- FOOTER ---------------------- */
