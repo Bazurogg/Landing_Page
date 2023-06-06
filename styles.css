@@ -82,12 +82,12 @@ li:hover {
 }
 
 
-.fa-brands {
+.icon-home{
     padding-left: 15px;
     transition: 0.8s;  
 }
 
-.fa-brands:hover {
+.icon-home:hover {
     cursor: pointer;
     opacity: 45%;
     transition-timing-function: ease-out;
@@ -332,8 +332,9 @@ p5 {
     width: 230px;
     height: 230px;
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-radius: 50%;
+    position: relative;
 }
 
 .cardteam-container {
@@ -352,38 +353,50 @@ p5 {
     transition: 0.8s;
 }
 
-.cardpeople-image .team-ppl:hover {
+.cardpeople-image:hover .team-ppl {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     transform: scale(1.1);
     transition-timing-function: ease-out;
 }
 
-/* .cardpeople-image .team-ppl:hover .iconppl-container {
-    transform: translateX(200px);
+.cardpeople-image:hover .icon-container {
+    top: calc(100% - 70%);
+    left: calc(100% - 99%);
+    opacity: 1;
+}
 
-} */
 
-
-/* .icon-container {
-    border: solid 2px blue;
-} */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55px;
+    /* border: solid 2px blue; */
+    position: absolute;
+    top: -2px;
+    left: -35px;
+    transition: 0.8s;
+    opacity: 0;
+}
  
 .icon-ppl {
-    width: 50px;
-    height: 50px;
-    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    background-color: white;
     border-radius: 50%;
-    position: relative;
-    top: -249px;
-    left: -63px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 i.ppl-social {
-    left: -2px;
-    top: 6px;
-    position: absolute;
-    font-size: 40px;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
