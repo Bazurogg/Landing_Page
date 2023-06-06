@@ -465,3 +465,30 @@ p6 {
     color:black;
     transform: translateY(-4px);
 }
+
+
+/*------------------------------------- B L O G / SECTION ---------------------------------------------*/
+
+
+.blog {
+    background-color: white;
+}
+
+.blogbloc-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-top: 70px;
+    /* border: solid 1px blue; */
+
+}
+
+.blog-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+p7 {
+    margin-top: 20px;
+    text-align: center;
+}
