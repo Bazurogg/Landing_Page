@@ -391,14 +391,19 @@ p5 {
     align-items: baseline;
 }
 
+.icon-ppl:hover {
+    cursor: pointer;
+}
+
 i.ppl-social {
     font-size: 20px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
+
+
 
 .ppl-name, span{
     border: none;
@@ -525,7 +530,7 @@ p7 {
 .blog-textcard {
     text-align: justify;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 200;
     padding-right: 100px;
     padding-bottom: 9px;
 }
