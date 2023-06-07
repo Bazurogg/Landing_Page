@@ -478,9 +478,7 @@ p6 {
     display: flex;
     flex-direction: column;
     align-items: center ;
-    padding-top: 70px;
-    /* border: solid 1px blue; */
-
+    padding-top: 40px;
 }
 
 .blog-title {
@@ -489,6 +487,51 @@ p6 {
 }
 
 p7 {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
+    color: slategray;
+}
+
+.blog-bloctnr {
+    display:flex;
+    justify-content: space-around;
+    padding: 0 170px;
+    margin-top: 150px;
+}
+
+.blog-imgcard {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-image {
+    border-radius: 10px;
+}
+
+.blog-image {
+    width: 100%;
+    object-fit: fill;
+}
+
+.blogcard-title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.blog-textcard {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-right: 100px
+}
+
+.btn-readmore {
+    font-family: "Poppins";
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #1294b8;
 }
