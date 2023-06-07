@@ -358,6 +358,7 @@ p5 {
     -webkit-filter: grayscale(0%);
     transform: scale(1.1);
     transition-timing-function: ease-out;
+    
 }
 
 .cardpeople-image:hover .icon-container {
@@ -372,7 +373,6 @@ p5 {
     flex-direction: column;
     align-items: center;
     width: 55px;
-    /* border: solid 2px blue; */
     position: absolute;
     top: -2px;
     left: -35px;
@@ -515,11 +515,19 @@ p7 {
 
 .blog-image {
     border-radius: 10px;
-}
-
-.blog-image {
     width: 100%;
     object-fit: fill;
+    transition: 0.8s;
+}
+
+.blogimg-ctnr {
+    position: relative;
+}
+
+.blogimg-ctnr:hover .blog-image {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition-timing-function: ease-out;
 }
 
 .blogcard-title {
@@ -542,4 +550,25 @@ p7 {
     border: none;
     font-size: 16px;
     color: #1294b8;
+}
+
+.blogcard-detail {
+    position: absolute;
+    width: fit-content;
+    top: 30px;
+    left: 40px;
+    color: white;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.blogimg-ctnr:hover .blogcard-detail {
+    opacity: 1;
+}
+
+
+/*------------------------------------- P R I C I N G / SECTION ---------------------------------------------*/
+
+.pricing {
+    background-color: white;
 }
