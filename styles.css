@@ -94,7 +94,7 @@ li:hover {
 }
 
 .main-container {
-    margin-top: 60px;
+    margin-top: 140px;
     display: inline-flex;
     margin-left: 80px;
     
@@ -214,7 +214,8 @@ p4 {
 
 .cards-container {
     display: flex;
-    margin-bottom: 190px;
+    margin-top: 70px;
+    margin-bottom: 150px;
 }
 
 .card {
@@ -603,6 +604,10 @@ p7 {
     margin-top: 50px;
 }
 
+.pricing-bottext {
+    color: silver;
+}
+
 .user-counter {
     margin-right: 60px;
     margin-bottom: 60px;
@@ -624,6 +629,7 @@ p7 {
 
 .pricingbloc-bot {
     background-color: rgb(240, 240, 240);
+    padding-bottom: 40px;
 }
 
 .pricing-bottextcontainer {
@@ -647,14 +653,96 @@ p7 {
 
 .pricing-cardcontainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
 .pricing-card {
-    width: 400px;
-    height: 500px;
+    width: 320px;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 15px;
     background-color: white;
+    box-shadow: 1px 12px 30px 2px rgba(160, 160, 160, 0.637);
+}
+
+.pricecard_topcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.priceofservice {
+    position: relative;
+}
+
+.dollar-sign {
+    position: absolute;
+    color: #2266fa;
+    font-size: 30px;
+    top: 20px;
+    left: -15px;
+}
+
+.pricenbr {
+    font-size: 70px;
+    color: #2266fa;
+}
+
+.month {
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+}
+
+.postit-pricecard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 12px;
+    width:60px;
+    height: 60px;
+    margin-left: 30px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 14px;
+    background-color: #2266fa;
+    border-radius: 10px;
+}
+
+.postit-reduction {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.joinbtn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.join-now{
+    font-family: "Poppins";
+    padding: 8px 108px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2266fa;
+    color: white;
+
+}
+
+.optioncard-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.pricecardoption-box {
+    margin: 20px  25px;
+    
 }
 
