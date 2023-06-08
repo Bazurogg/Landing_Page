@@ -823,10 +823,24 @@ p7 {
 
 /*------------------------------------- F O O T E R / SECTION ---------------------------------------------*/
 
-
 .footer {
     /* z-index: ; */
     width: 100%;
     height: 300px;
-    background-color: darkslategrey;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-iconecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+i.footer {
+    font-size: 20px;
+    color: silver;
 }
