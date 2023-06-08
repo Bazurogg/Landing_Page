@@ -32,7 +32,7 @@ body {
 
 section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     scroll-snap-align: start;
 }
 
@@ -480,7 +480,7 @@ p6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 160px;
 }
 
 .client-textbloc {
@@ -515,101 +515,6 @@ p6 {
 .client-ptext {
     color: rgb(175, 175, 175);
     margin-top: 20px;
-}
-
-
-/*------------------------------------- B L O G / SECTION ---------------------------------------------*/
-
-
-.blog {
-    background-color: white;
-}
-
-.blogbloc-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    padding-top: 40px;
-}
-
-.blog-title {
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-p7 {
-    margin-top: 15px;
-    text-align: center;
-    font-weight: 300;
-    color: silver;
-}
-
-.blog-bloctnr {
-    display:flex;
-    justify-content: space-around;
-    padding: 0 260px;
-    margin-top: 100px;
-}
-
-.blog-imgcard {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.blog-image {
-    border-radius: 10px;
-    width: 100%;
-    object-fit: fill;
-    transition: 0.8s;
-}
-
-.blogimg-ctnr {
-    position: relative;
-}
-
-.blogimg-ctnr:hover .blog-image {
-    cursor: pointer;
-    filter: brightness(50%);
-    transition-timing-function: ease-out;
-}
-
-.blogcard-title {
-    font-weight: 500;
-    font-size: 17px;
-    margin: 15px 0;
-}
-
-.blog-textcard {
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 200;
-    padding-right: 100px;
-    padding-bottom: 9px;
-}
-
-.btn-readmore {
-    font-family: "Poppins";
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    color: #1294b8;
-}
-
-.blogcard-detail {
-    position: absolute;
-    width: fit-content;
-    top: 30px;
-    left: 40px;
-    color: white;
-    transition: 0.2s;
-    opacity: 0;
-}
-
-.blogimg-ctnr:hover .blogcard-detail {
-    opacity: 1;
 }
 
 
@@ -689,7 +594,7 @@ p7 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 110px;
+    padding-top: 250px;
 }
 
 .pricing-bottitle {
@@ -786,14 +691,18 @@ p7 {
 .join-now{
     font-family: "Poppins";
     padding: 8px 108px;
-    border: none;
+    border: 1px solid #2266fa;
     border-radius: 6px;
-    background-color: #2266fa;
-    color: white;
+    background-color: transparent;
+    color: #2266fa;
+    transition: 0.8s;
 }
 
 .join-now:hover {
     cursor:pointer;
+    background-color: #2266fa;
+    color: white;
+
 }
 
 .optioncard-container {
@@ -807,4 +716,113 @@ p7 {
 }
 
 
+/*------------------------------------- B L A N K  S P A C E / SECTION ---------------------------------------------*/
 
+.blankspace {
+    background-color: rgb(240, 240, 240);
+}
+
+/*------------------------------------- B L O G / SECTION ---------------------------------------------*/
+
+.blog {
+    background-color: white;
+
+}
+
+.blogbloc-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-top: 40px;
+}
+
+.blog-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+p7 {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 300;
+    color: silver;
+}
+
+.blog-bloctnr {
+    display:flex;
+    justify-content: space-around;
+    padding: 0 260px;
+    margin-top: 70px;
+}
+
+.blog-imgcard {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-image {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: fill;
+    transition: 0.8s;
+}
+
+.blogimg-ctnr {
+    position: relative;
+}
+
+.blogimg-ctnr:hover .blog-image {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition-timing-function: ease-out;
+}
+
+.blogcard-title {
+    font-weight: 500;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.blog-textcard {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 200;
+    padding-right: 100px;
+    padding-bottom: 9px;
+}
+
+.btn-readmore {
+    font-family: "Poppins";
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #1294b8;
+}
+
+.blogcard-detail {
+    position: absolute;
+    width: fit-content;
+    top: 30px;
+    left: 40px;
+    color: white;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.blogimg-ctnr:hover .blogcard-detail {
+    opacity: 1;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: darkslategrey;
+}
+
+.blog {
+    overflow-y: none;
+    scroll-snap-type: none;
+}
