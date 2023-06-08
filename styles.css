@@ -572,3 +572,89 @@ p7 {
 .pricing {
     background-color: white;
 }
+
+.pricing-topbloc {
+   display: flex;
+   flex-direction: row;
+   padding-left: 250px;
+   padding-top: 200px;
+   margin-bottom: 50px;
+}
+
+.pricingbloc-topcontent {
+    width: 550px;
+    padding-top: 50px;
+    margin-right: 110px;
+}
+
+.pricing-toptitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.pricing-toptext {
+    font-size: 19px;
+}
+
+
+.pricing-counter {
+    display: flex;
+    margin-top: 50px;
+}
+
+.user-counter {
+    margin-right: 60px;
+    margin-bottom: 60px;
+}
+
+.learnmore {
+    color:white;
+    font-family: "Poppins";
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    background-color: #2266fa;
+}
+
+.pricing-topimg {
+    width: 80%;
+}
+
+.pricingbloc-bot {
+    background-color: rgb(240, 240, 240);
+}
+
+.pricing-bottextcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.pricing-bottitle {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.pricing-bottext {
+    width: 510px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.pricing-cardcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.pricing-card {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+}
+
