@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid sandybrown;
+    border: 1px solid black;
     border-radius: 50%;
     transition: 0.8s;
     text-decoration: none;
@@ -24,16 +24,16 @@
 
 .backTopBtn:hover {
     cursor: pointer;
-    background-color: sandybrown;
+    background-color: black;
 }
 
 .backTopBtn:hover .backtotop-btn{
-    color: white;
+    color: #437fff;
 }
 
 i.backtotop-btn {
     font-size: 30px;
-    color: sandybrown;
+    color: black;
     transition: 0.8s;
 }
 
@@ -613,7 +613,7 @@ p6 {
     border: none;
     border-radius: 8px;
     padding: 10px 25px;
-    background-color: #2266fa;
+    background-color: #437fff;
 }
 
 .pricing-topimg {
@@ -678,7 +678,7 @@ p6 {
 
 .dollar-sign {
     position: absolute;
-    color: #2266fa;
+    color: #437fff;
     font-size: 30px;
     top: 20px;
     left: -15px;
@@ -686,7 +686,7 @@ p6 {
 
 .pricenbr {
     font-size: 70px;
-    color: #2266fa;
+    color: #437fff;
 }
 
 .month {
@@ -706,7 +706,7 @@ p6 {
     top: -10px;
     right: -10px;
     font-size: 14px;
-    background-color: #2266fa;
+    background-color: #437fff;
     border-radius: 10px;
 }
 
@@ -726,16 +726,16 @@ p6 {
 .join-now{
     font-family: "Poppins";
     padding: 8px 108px;
-    border: 1px solid #2266fa;
+    border: 1px solid #437fff;
     border-radius: 6px;
     background-color: transparent;
-    color: #2266fa;
+    color: #437fff;
     transition: 0.8s;
 }
 
 .join-now:hover {
     cursor:pointer;
-    background-color: #2266fa;
+    background-color: #437fff;
     color: white;
 
 }
