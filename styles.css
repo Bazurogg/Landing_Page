@@ -5,34 +5,45 @@
     /* border: 1px solid black; */
 }
 
-.backtopbtn-wraper {
+.backTopBtn {
+    position: fixed;
+    top: 820px;
+    left: 1770px;
+    background-color: transparent;
+    border: none;
     width: 50px;
-    height: 50px;
-    position: absolute;
+    height: 50px;    
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 820px;
-    left: 1770px;
-    border: 2px solid sandybrown;
+    border: 1px solid sandybrown;
     border-radius: 50%;
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.backTopBtn:hover {
+    cursor: pointer;
+    background-color: sandybrown;
+}
+
+.backTopBtn:hover .backtotop-btn{
+    color: white;
 }
 
 i.backtotop-btn {
     font-size: 30px;
     color: sandybrown;
+    transition: 0.8s;
 }
 
 
 /*------------------------------------- M A S T E R ---------------------------------------------*/
 
-html {
-    
+html {  
     /* This will make the gradient extend to your content height otherwise it will be limited to just the window height. */
-    
     min-height: 100%;
-    font-family: Poppins;
-
+    font-family: "Poppins";
 }
 
 body {
@@ -46,6 +57,7 @@ body {
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -75,6 +87,11 @@ h1 {
 .navbar-top {
     margin-top: 25px;
     list-style: none;
+}
+
+.navbar-top a {
+    /* Supprimer tout les styles auto des elements comme bouton, anchor, list etc.*/
+    all: unset; 
 }
 
 li {
