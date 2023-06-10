@@ -888,18 +888,40 @@ p7 {
     padding: 30px;
     border: 1px solid silver;
     border-radius: 50%;
+    transition: 0.8s;
 }
 
+.iconefooter-wraper:hover {
+    cursor: pointer;
+    background-color: silver;
+    color: rgb(34, 34, 34);
+    transition-timing-function: ease-out;
+}
 
 .termscontact-container {
     margin-top: 30px;
 
 }
 
-.separator {
+.footer-link01, .footer-link02, .footer-link03 {
+    transition: 0.8s;
+    opacity: 0.5;
+}
+
+.footer-link01:hover, .footer-link02:hover, .footer-link03:hover {
+    cursor: default;
+    opacity: 1;
+    text-underline-offset: 3px;
+    text-decoration: underline;
+}
+
+.footer-sep01, .footer-sep02 {
     margin: 0 40px;
+    opacity: 0.5;
+    transition: 0.8s;
 }
 
 .credits {
+    font-size: 13px;
     margin-top: 30px;
 }
