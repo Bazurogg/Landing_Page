@@ -37,6 +37,20 @@ i.backtotop-btn {
     transition: 0.8s;
 }
 
+.gear-wraper {
+    position: fixed;
+    top: 200px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+}
+
+i.fa-gear {
+    color: silver;
+}
 
 /*------------------------------------- M A S T E R ---------------------------------------------*/
 
@@ -177,11 +191,12 @@ p2 {
     outline: none;
     margin-left: 5px;
     background-color: rgb(210, 234, 255);
+    font-family: "Poppins";
 }
 
 ::placeholder {
-    font-family: Poppins;
-    font-weight: bold;
+    font-family: "Poppins";
+    font-weight: 600;
     color: rgba(127, 127, 127, 0.421);
 }
 
