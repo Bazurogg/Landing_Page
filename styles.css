@@ -40,6 +40,7 @@ i.backtotop-btn {
 
 /*------------------------------------- M A S T E R ---------------------------------------------*/
 
+
 html {  
     /* This will make the gradient extend to your content height otherwise it will be limited to just the window height. */
     min-height: 100%;
