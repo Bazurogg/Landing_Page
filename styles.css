@@ -139,9 +139,9 @@ li:hover {
 .contenttext-container {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 100px;
     text-align: left;
-    padding: 0 124px;
+    padding-left: 124px;
     
 }
 
@@ -156,8 +156,8 @@ p1 {
 }
 
 p2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     font-size: 16px;
     white-space:normal;
 }

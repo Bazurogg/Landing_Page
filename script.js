@@ -4,6 +4,7 @@ const footerLink03 = document.getElementById("footerlink-03");
 const sepFooter01 = document.getElementById("footersep-01");
 const sepFooter02 = document.getElementById("footersep-02");
 
+// ----------------------------------------- Animation crédits footer -------------------------------------------------]
 
 footerLink01.addEventListener("mouseenter", e => {
     console.log("yeah mouse is on me")
@@ -35,3 +36,6 @@ footerLink03.addEventListener("mouseenter", e => {
 footerLink03.addEventListener("mouseleave", e => {
     sepFooter02.style.opacity ="0.5"  
 })
+
+// ----------------------------------------- Color Picker -------------------------------------------------]
+
