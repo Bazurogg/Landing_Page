@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(49, 49, 49);
     border-radius: 50%;
     transition: 0.8s;
     text-decoration: none;
@@ -24,16 +24,16 @@
 
 .backTopBtn:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(49, 49, 49);
 }
 
 .backTopBtn:hover .backtotop-btn{
-    color: #437fff;
+    color: silver;
 }
 
 i.backtotop-btn {
     font-size: 30px;
-    color: black;
+    color: rgb(49, 49, 49);
     transition: 0.8s;
 }
 
@@ -46,10 +46,22 @@ i.backtotop-btn {
     align-items: center;
     height: 50px;
     background-color: rgb(34, 34, 34);
+    transition: 0.4s;  
+}
+
+.gear-wraper:hover {
+    background-color: silver;
+    transition-timing-function: ease-out;
+}
+
+.gear-wraper:hover .fa-gear{
+    color: rgb(34, 34, 34);
+    transition-timing-function: ease-out;
 }
 
 i.fa-gear {
     color: silver;
+    transition: 0.4s;
 }
 
 /*------------------------------------- M A S T E R ---------------------------------------------*/
@@ -878,7 +890,7 @@ p7 {
     /* z-index: ; */
     width: 100%;
     height: 300px;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(19, 19, 21);
     display: flex;
     flex-direction: column;
     align-items: center;
