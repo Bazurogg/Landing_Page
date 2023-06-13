@@ -116,12 +116,12 @@ i.backtotop-btn {
 }
 
 .gear-wraper.active {
-    left:300px;
-    background-color: silver;   
+    left:150px;
+    background-color: rgb(241, 241, 241);   
 }
 
 .gear-wraper:hover {
-    background-color: silver;
+    background-color: rgb(241, 241, 241);
 
 }
 
@@ -142,10 +142,11 @@ i.fa-gear.active {
 
 .submenu-wraper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 0px;
-    height: 500px;
-    background-color: silver;
+    height: 460px;
+    background-color: rgb(241, 241, 241);
     position: absolute;
     top: 200px;
     z-index: 1;
@@ -155,12 +156,41 @@ i.fa-gear.active {
 }
 
 .submenu-wraper.active {
-    width: 300px
+    width: 150px
 }
 
 .submenu-title {
     margin-top: 12px;
     white-space: nowrap;
+}
+
+.color-patch {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 5px 20px 0.5px rgba(58, 55, 55, 0.386);
+}
+
+.color-patch.patch01 {
+    background-color: #00BCD4;
+}
+
+.color-patch.patch02 {
+    background-color: #4CAF50;
+}
+
+.color-patch.patch03 {
+    background-color: #FFC107;
+}
+
+.color-patch.patch04 {
+    background-color: #F44336;
+}
+
+.color-patch.patch05 {
+    background-color: #7C4DFF;
 }
 
 /*------------------------------------- H O M E / SECTION ---------------------------------------------*/
