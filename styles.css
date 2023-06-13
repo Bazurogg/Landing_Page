@@ -5,6 +5,67 @@
     /* border: 1px solid black; */
 }
 
+
+/*------------------------------------- G L O B A L S     C L A S S  ---------------------------------------------*/
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.greencheck {
+    color: #62d260;
+}
+
+.redmark {
+    color: #d90202;
+}
+
+a {
+    all: unset;
+}
+
+#cardpage, #teampage, #clientpage, #pricingpage, #blogpage, #blankspace {
+    background: white;
+}
+
+
+/*------------------------------------- M A S T E R ---------------------------------------------*/
+
+
+html {  
+    /* This will make the gradient extend to your content height otherwise it will be limited to just the window height. */
+    min-height: 100%;
+    font-family: "Poppins";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgb(139,195, 245), #1294b8);
+}
+
+.master-container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+
+    /* Scroll with snapign effect */
+    /* scroll-snap-align: start; */
+}
+
+/*------------------------------------- M A S T E R - B U T T O N S ---------------------------------------------*/
+
 .backTopBtn {
     position: fixed;
     top: 820px;
@@ -21,6 +82,7 @@
     transition: 0.8s;
     text-decoration: none;
 }
+
 
 .backTopBtn:hover {
     cursor: pointer;
@@ -64,35 +126,6 @@ i.fa-gear {
     transition: 0.4s;
 }
 
-/*------------------------------------- M A S T E R ---------------------------------------------*/
-
-
-html {  
-    /* This will make the gradient extend to your content height otherwise it will be limited to just the window height. */
-    min-height: 100%;
-    font-family: "Poppins";
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(rgb(139,195, 245), #1294b8);
-}
-
-.master-container {
-    width: 100%;
-    height: 100%;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
-section {
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: start;
-}
-
 
 /*------------------------------------- H O M E / SECTION ---------------------------------------------*/
 
@@ -109,14 +142,12 @@ h1 {
     color:white;
 }
 
-
-
-.navbar-top {
+#navtop {
     margin-top: 25px;
     list-style: none;
 }
 
-.navbar-top a {
+#navtop a {
     /* Supprimer tout les styles auto des elements comme bouton, anchor, list etc.*/
     all: unset; 
 }
@@ -243,10 +274,6 @@ p2 {
 
 /*------------------------------------- C A R D / SECTION ---------------------------------------------*/
 
-
-.card-page {
-    background: white;
-}
 
 .cardpage-container {
     display: flex;
@@ -465,8 +492,6 @@ i.ppl-social {
     transform: translate(-50%, -50%);
 }
 
-
-
 .ppl-name, span{
     border: none;
     text-align: center;
@@ -485,7 +510,7 @@ span.ppl-post {
 /*------------------------------------- P A R A L L A X / SECTION ---------------------------------------------*/
 
 
-.parallax {
+#faq {
     height: 60%;
     background-attachment: fixed;
     background-position: center;
@@ -535,15 +560,12 @@ p6 {
 
 /*------------------------------------- C L I E N T / SECTION ---------------------------------------------*/
 
-.client {
-    background-color: white;
-}
 
 .client-mainbloc {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 160px;
+    padding-top: 260px;
 }
 
 .client-textbloc {
@@ -583,15 +605,11 @@ p6 {
 
 /*------------------------------------- P R I C I N G / SECTION ---------------------------------------------*/
 
-.pricing {
-    background-color: white;
-}
-
 .pricing-topbloc {
    display: flex;
    flex-direction: row;
    padding-left: 250px;
-   padding-top: 200px;
+   padding-top: 100px;
    margin-bottom: 50px;
 }
 
@@ -642,6 +660,13 @@ p6 {
     border-radius: 8px;
     padding: 10px 25px;
     background-color: #437fff;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.learnmore:hover {
+    opacity: 1;
 }
 
 .pricing-topimg {
@@ -657,7 +682,7 @@ p6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 250px;
+    padding-top: 120px;
 }
 
 .pricing-bottitle {
@@ -670,6 +695,7 @@ p6 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 70px;
+    font-size: 18px;
 }
 
 .pricing-cardcontainer {
@@ -779,18 +805,16 @@ p6 {
 }
 
 
+
 /*------------------------------------- B L A N K  S P A C E / SECTION ---------------------------------------------*/
 
-.blankspace {
+
+#blankspace {
     background-color: rgb(240, 240, 240);
 }
 
 /*------------------------------------- B L O G / SECTION ---------------------------------------------*/
 
-.blog {
-    background-color: white;
-
-}
 
 .blogbloc-text {
     display: flex;
@@ -887,7 +911,6 @@ p7 {
 /*------------------------------------- F O O T E R / SECTION ---------------------------------------------*/
 
 .footer {
-    /* z-index: ; */
     width: 100%;
     height: 300px;
     background-color: rgb(19, 19, 21);
