@@ -126,6 +126,10 @@ i.fa-gear {
     transition: 0.4s;
 }
 
+.gearicone-box.active .fa-gear {
+    transform: rotate(360);
+
+}
 
 /*------------------------------------- H O M E / SECTION ---------------------------------------------*/
 
