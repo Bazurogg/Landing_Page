@@ -102,33 +102,64 @@ i.backtotop-btn {
 .gear-wraper {
     position: fixed;
     top: 200px;
+    left: 0px;
     width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     background-color: rgb(34, 34, 34);
-    transition: 0.4s;  
+    transition: all 0.5s; 
+    z-index: 2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.gear-wraper.active {
+    left:300px;
+    background-color: silver;   
 }
 
 .gear-wraper:hover {
     background-color: silver;
-    transition-timing-function: ease-out;
+
 }
 
-.gear-wraper:hover .fa-gear{
+.gear-wraper:hover .fa-gear {
     color: rgb(34, 34, 34);
-    transition-timing-function: ease-out;
 }
 
 i.fa-gear {
     color: silver;
-    transition: 0.4s;
+    transform: rotate(0deg);
+    transition: 0.8s;
 }
 
-.gearicone-box.active .fa-gear {
-    transform: rotate(360);
+i.fa-gear.active {
+    transform: rotate(360deg);
+    color: rgb(34, 34, 34);
+}
 
+.submenu-wraper {
+    display: flex;
+    justify-content: center;
+    width: 0px;
+    height: 500px;
+    background-color: silver;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.5s;
+    border-bottom-right-radius: 10px;
+}
+
+.submenu-wraper.active {
+    width: 300px
+}
+
+.submenu-title {
+    white-space: nowrap;
 }
 
 /*------------------------------------- H O M E / SECTION ---------------------------------------------*/
@@ -174,8 +205,7 @@ li:hover {
 
 .icones-container {
     margin-top: 25px;
-    margin-right: 120px;
-    
+    margin-right: 120px;   
 }
 
 
@@ -193,8 +223,7 @@ li:hover {
 .main-container {
     margin-top: 140px;
     display: inline-flex;
-    margin-left: 80px;
-    
+    margin-left: 80px;   
 }
 
 .contenttext-container {
@@ -202,8 +231,7 @@ li:hover {
     flex-direction: column;
     margin-top: 100px;
     text-align: left;
-    padding-left: 124px;
-    
+    padding-left: 124px;    
 }
 
 p1, p2 {
@@ -232,6 +260,7 @@ p2 {
     background-color: rgb(210, 234, 255);
 
 }
+
 #email-submit {
     border-style: none;
     flex-grow: 2;

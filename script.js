@@ -39,3 +39,12 @@ footerLink03.addEventListener("mouseleave", e => {
 
 // ----------------------------------------- Color Picker -------------------------------------------------]
 
+let subMenu = document.getElementById("submenu");
+let gearMenu = document.getElementById("gearicone");
+let gearWrap = document.getElementById("gearwrap");
+function toggleMenu() {
+
+    subMenu.classList.toggle("active");
+    gearMenu.classList.toggle("active");
+    gearWrap.classList.toggle("active");
+}
