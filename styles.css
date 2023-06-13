@@ -159,6 +159,7 @@ i.fa-gear.active {
 }
 
 .submenu-title {
+    margin-top: 12px;
     white-space: nowrap;
 }
 
