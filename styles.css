@@ -171,10 +171,17 @@ i.fa-gear.active {
     width: 60px;
     height: 60px;
     box-shadow: 5px 5px 20px 0.5px rgba(58, 55, 55, 0.386);
+    transition: 0.4s;
+}
+
+.color-patch:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
 }
 
 .color-patch.patch01 {
-    background-color: #00BCD4;
+    background: radial-gradient(rgb(139,195, 245), #1294b8);
 }
 
 .color-patch.patch02 {

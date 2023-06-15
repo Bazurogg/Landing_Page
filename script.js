@@ -48,3 +48,10 @@ function toggleMenu() {
     gearMenu.classList.toggle("active");
     gearWrap.classList.toggle("active");
 }
+
+function color(z) {
+    var a = getComputedStyle(z);
+    var b = a.background;
+    document.getElementById("color-swap").style.background = b;
+    console.log("hey !");
+}
