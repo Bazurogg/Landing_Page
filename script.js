@@ -43,6 +43,7 @@ let subMenu = document.getElementById("submenu");
 let gearMenu = document.getElementById("gearicone");
 let gearWrap = document.getElementById("gearwrap");
 let colorPicker = document.getElementById("colorpicker");
+
 function toggleMenu() {
 
     subMenu.classList.toggle("active");
@@ -62,3 +63,16 @@ function color(z) {
 
     console.log("hey !");
 }
+
+
+// ----------------------------------------- Scroll top button -------------------------------------------------]
+
+const scrollTopBtn = document.getElementById("totopbtn");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        scrollTopBtn.style.visibility = "visible"
+    } else {
+        scrollTopBtn.style.visibility = "hidden"
+    }
+})
