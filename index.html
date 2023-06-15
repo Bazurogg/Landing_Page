@@ -19,15 +19,8 @@
     
     <a href=#homepage class="backTopBtn"><i class="fa-solid fa-angles-up backtotop-btn"></i></a>
 
-    <div class="colorpicker-container">
+    <div class="colorpicker-container" id="colorpicker">
         
-        <div class="gear-wraper" id="gearwrap" onclick="toggleMenu()">
-    
-            <div class="gearicone-box">
-                <i class="fa-solid fa-gear" id="gearicone"></i>
-            </div>
-    
-        </div>
         
         <div class="submenu-wraper" id="submenu">
             <span class="submenu-title">Color Switcher</span>
@@ -37,8 +30,17 @@
                 <div class="color-patch patch03" onclick="color(this)"></div>
                 <div class="color-patch patch04" onclick="color(this)"></div>
                 <div class="color-patch patch05" onclick="color(this)"></div>
+                <div class="color-patch patch06" onclick="color(this)"></div>
             </div>
-
+            
+        </div>
+        
+        <div class="gear-wraper" id="gearwrap" onclick="toggleMenu()">
+    
+            <div class="gearicone-box">
+                <i class="fa-solid fa-gear" id="gearicone"></i>
+            </div>
+    
         </div>
 
     </div>
@@ -81,7 +83,7 @@
                         <form class="forminput-mail">
         
                             <input name='email' id="email-submit" placeholder="Enter your email">
-                            <button class="sub-btn">SUBSCRIBE</button>
+                            <button class="sub-btn" id="subbutton">SUBSCRIBE</button>
         
                         </form>
                     
@@ -110,7 +112,7 @@
     
                 <div class="cards-container">
                     
-                    <div class="card card-01 color-swap" >
+                    <div class="card card-01" id="cardcolor-swap01">
                         <div class="card-content">
     
                             <div class="card-icon">
@@ -125,7 +127,7 @@
                         </div>                  
                     </div>
                     
-                    <div class="card card-02 color-swap">
+                    <div class="card card-02" id="cardcolor-swap02">
                         <div class="card-content">
     
                             <div class="card-icon">
@@ -140,7 +142,7 @@
                         </div>
                     </div>
                     
-                    <div class="card card-03 color-swap">
+                    <div class="card card-03" id="cardcolor-swap03">
                         <div class="card-content">
                             
                             <div class="card-icon">

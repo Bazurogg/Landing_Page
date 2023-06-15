@@ -42,16 +42,23 @@ footerLink03.addEventListener("mouseleave", e => {
 let subMenu = document.getElementById("submenu");
 let gearMenu = document.getElementById("gearicone");
 let gearWrap = document.getElementById("gearwrap");
+let colorPicker = document.getElementById("colorpicker");
 function toggleMenu() {
 
     subMenu.classList.toggle("active");
     gearMenu.classList.toggle("active");
     gearWrap.classList.toggle("active");
+    colorPicker.classList.toggle("active");
 }
 
 function color(z) {
     var a = getComputedStyle(z);
     var b = a.background;
     document.getElementById("color-swap").style.background = b;
+    document.getElementById("cardcolor-swap01").style.background = b;
+    document.getElementById("cardcolor-swap02").style.background = b;
+    document.getElementById("cardcolor-swap03").style.background = b;
+    document.getElementById("subbutton").style.background = b;
+
     console.log("hey !");
 }

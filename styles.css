@@ -100,9 +100,9 @@ i.backtotop-btn {
 }
 
 .gear-wraper {
-    position: fixed;
+    /* position: fixed;
     top: 200px;
-    left: 0px;
+    left: 0px; */
     width: 50px;
     display: flex;
     justify-content: center;
@@ -113,6 +113,7 @@ i.backtotop-btn {
     z-index: 2;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: red 1px solid;
 }
 
 .gear-wraper.active {
@@ -145,23 +146,50 @@ i.fa-gear.active {
     flex-direction: column;
     align-items: center;
     width: 0px;
-    height: 460px;
+    height: auto;
     background-color: rgb(241, 241, 241);
-    position: absolute;
-    top: 200px;
+    /* position: absolute;
+    top: 200px; */
     z-index: 1;
     overflow: hidden;
     transition: width 0.5s;
     border-bottom-right-radius: 10px;
+    border: greenyellow solid 1px;
 }
 
 .submenu-wraper.active {
-    width: 150px
+    width: auto;
+    transition: 0.8s;
+}
+
+.colorpicker-container {
+    display: flex;
+    border: 1px solid yellow;
+    width: fit-content;
+    position: absolute;
+    top: 300px;
+    transition: width 0.8s;
+}
+
+.colorpicker-container.active {
+    transition: width 0.8s;
+}
+
+
+.colorpicker-wraper {
+    border: 1px solid black;
 }
 
 .submenu-title {
     margin-top: 12px;
     white-space: nowrap;
+}
+
+.colorpatch-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 10px;
+    padding: 15px;
 }
 
 .color-patch {
@@ -185,21 +213,24 @@ i.fa-gear.active {
 }
 
 .color-patch.patch02 {
-    background-color: #4CAF50;
+    background: radial-gradient(#8ce08e, #4CAF50);
 }
 
 .color-patch.patch03 {
-    background-color: #FFC107;
+    background: radial-gradient(#ddca91, #FFC107);
 }
 
 .color-patch.patch04 {
-    background-color: #F44336;
+    background: radial-gradient(#f19992, #F44336);
 }
 
 .color-patch.patch05 {
-    background-color: #7C4DFF;
+    background: radial-gradient(#ac97e5, #7C4DFF);
 }
 
+.color-patch.patch06 {
+    background: radial-gradient(#b5e2f7, #607D8B);
+}
 /*------------------------------------- H O M E / SECTION ---------------------------------------------*/
 
 
