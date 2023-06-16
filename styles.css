@@ -1006,7 +1006,7 @@ p7 {
     height: 100vh;
 }
 
-/*------------------------------------- F O O T E R / SECTION ---------------------------------------------*/
+/*------------------------------------- F O O T E R / S E C T I O N ---------------------------------------------*/
 
 .footer {
     width: 100%;
@@ -1074,3 +1074,218 @@ p7 {
     font-size: 13px;
     margin-top: 30px;
 }
+
+
+/*---------------------------------------------------------------------- M E D I A   Q U E R I E S ----------------------------------------------------------------------*/
+
+
+/*------------------------------------- T A B L E T S ---------------------------------------------*/
+
+
+@media only screen and (min-device-width :768px)
+and (orientation : portrait) {
+
+
+.master-container{
+    width: 100%;
+}
+
+}
+
+
+
+/*------------------------------------- H O M E   P A G E  ---------------------------------------------*/
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0px;
+}
+
+li {
+    font-size: 22px;
+}
+
+.icones-container {
+    margin-top: 40px;
+    margin-right: 0;
+}
+
+.backimage-container {
+    display: none;
+}
+
+.icon-home {
+    padding: 0 18px;
+    font-size: 50px;
+}
+
+.icon-home:hover, li:hover {
+    opacity: 1
+}
+
+.main-container {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenttext-container {
+    margin: 0;
+    padding: 0;
+}
+
+p1 {
+    padding: 0 90px;
+    text-align: center;
+    font-size: 75px;
+}
+
+p2 {
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sub-btn {
+    padding: 27px 30px;
+    font-size: 20px;
+}
+
+#email-submit {
+    font-size: 30px;
+}
+
+
+/*------------------------------------- C A R D   P A G E ---------------------------------------------*/
+
+.cards-container {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 20px 0;
+    width: 550px;
+    height: 200px;
+}
+
+.card-content {
+    padding-top: 10px;
+}
+
+.p-card {
+    font-size: 15px;
+}
+
+
+/*------------------------------------- T E A M   P A G E  ---------------------------------------------*/
+
+
+
+.teampage-toptitle {
+    padding-top: 0;
+}
+
+
+.cardteam-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 60px 20px;
+}
+
+.team-stats {
+    margin-top: 0;
+}
+
+.stat {
+    margin-bottom: 28px;
+}
+
+
+/*------------------------------------- C L I E N T ---------------------------------------------*/
+
+.clientlogo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 35px 10px;
+    margin-top: 30px;
+}
+
+.logoclient {
+    width: 210px;
+}
+
+
+
+/*------------------------------------- P R I C I N G ---------------------------------------------*/
+
+
+.pricing-maincontnr {
+    padding-top: 40px;
+}
+
+.pricing-topbloc {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.price-topimgbloc {
+    margin: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+.pricing-topimg {
+    width: 100%;
+}
+
+.pricingbloc-topcontent {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.pricing-counter {
+    justify-content: center;
+}
+
+.join-now {
+    font-size: 18px;
+    padding: 10px 60px;
+}
+
+
+/*------------------------------------- B L O G ---------------------------------------------*/
+
+
+#blogpage {
+    height: fit-content;
+}
+
+.blog-bloctnr {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-bloctnr {
+    margin-top: 0;
+}
+
