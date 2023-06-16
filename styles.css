@@ -72,13 +72,13 @@ section {
     left: 1770px;
     background-color: transparent;
     border: none;
-    width: 50px;
-    height: 50px;    
+    width: 35px;
+    height: 35px;    
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(49, 49, 49);
-    border-radius: 50%;
+    border-radius: 10px;
     transition: 0.8s;
     text-decoration: none;
 }
@@ -192,8 +192,8 @@ i.fa-gear.active {
     margin-top: 20px;
     border: 1px solid white;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     box-shadow: 5px 5px 20px 0.5px rgba(58, 55, 55, 0.386);
     transition: 0.4s;
 }
@@ -206,26 +206,32 @@ i.fa-gear.active {
 
 .color-patch.patch01 {
     background: radial-gradient(rgb(139,195, 245), #1294b8);
+    background-color: #1294b8;
 }
 
 .color-patch.patch02 {
     background: radial-gradient(#8ce08e, #4CAF50);
+    background-color: #3c8d3d;
 }
 
 .color-patch.patch03 {
     background: radial-gradient(#ddca91, #FFC107);
+    background-color: #e1b01e;
 }
 
 .color-patch.patch04 {
     background: radial-gradient(#f19992, #F44336);
+    background-color: #a03931;
 }
 
 .color-patch.patch05 {
     background: radial-gradient(#ac97e5, #7C4DFF);
+    background-color: #533999;
 }
 
 .color-patch.patch06 {
     background: radial-gradient(#b5e2f7, #607D8B);
+    background-color: #3a5664;
 }
 /*------------------------------------- H O M E / SECTION ---------------------------------------------*/
 
@@ -354,7 +360,7 @@ p2 {
 
 .sub-btn:hover {
     cursor: pointer;
-    background-color: #20b7e1;
+    filter: brightness(1.2);
     transition-timing-function: ease-out;
 }
 
@@ -1082,7 +1088,7 @@ p7 {
 /*------------------------------------- T A B L E T S ---------------------------------------------*/
 
 
-@media only screen and (min-device-width :768px)
+@media only screen and (min-device-width : 768px)
 and (orientation : portrait) {
 
 
@@ -1090,7 +1096,7 @@ and (orientation : portrait) {
     width: 100%;
 }
 
-}
+
 
 
 
@@ -1289,3 +1295,4 @@ p2 {
     margin-top: 0;
 }
 
+}

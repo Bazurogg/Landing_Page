@@ -4,7 +4,7 @@ const footerLink03 = document.getElementById("footerlink-03");
 const sepFooter01 = document.getElementById("footersep-01");
 const sepFooter02 = document.getElementById("footersep-02");
 
-// ----------------------------------------- Animation crédits footer -------------------------------------------------]
+// ----------------------------------------- Animation credits footer -------------------------------------------------]
 
 footerLink01.addEventListener("mouseenter", e => {
     console.log("yeah mouse is on me")
@@ -52,16 +52,18 @@ function toggleMenu() {
     colorPicker.classList.toggle("active");
 }
 
-function color(z) {
+function colors(z) {
     var a = getComputedStyle(z);
     var b = a.background;
+    var c = a.backgroundColor;
     document.getElementById("color-swap").style.background = b;
     document.getElementById("cardcolor-swap01").style.background = b;
     document.getElementById("cardcolor-swap02").style.background = b;
     document.getElementById("cardcolor-swap03").style.background = b;
-    document.getElementById("subbutton").style.background = b;
+    document.getElementById("subbutton").style.background = c;
+    document.getElementById("learnmore-btn").style.background = c;
+    document.getElementsByClassName('pricenbr').style.color = c;
 
-    console.log("hey !");
 }
 
 
