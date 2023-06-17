@@ -7,7 +7,6 @@ const sepFooter02 = document.getElementById("footersep-02");
 // ----------------------------------------- Animation credits footer -------------------------------------------------]
 
 footerLink01.addEventListener("mouseenter", e => {
-    console.log("yeah mouse is on me")
     sepFooter01.style.opacity = "1"   
 })
 
@@ -17,7 +16,6 @@ footerLink01.addEventListener("mouseleave", e => {
 
 
 footerLink02.addEventListener("mouseenter", e => {
-    console.log("yeah mouse is on me")
     sepFooter01.style.opacity = "1"   
     sepFooter02.style.opacity = "1"   
 })
@@ -29,7 +27,6 @@ footerLink02.addEventListener("mouseleave", e => {
 
 
 footerLink03.addEventListener("mouseenter", e => {
-    console.log("yeah mouse is on me")
     sepFooter02.style.opacity = "1"   
 })
 
@@ -56,15 +53,52 @@ function colors(z) {
     var a = getComputedStyle(z);
     var b = a.background;
     var c = a.backgroundColor;
+    var swapColor = document.getElementsByClassName("swap-color");
+    var joinBtn = document.getElementsByClassName("join-now"); 
+
     document.getElementById("color-swap").style.background = b;
     document.getElementById("cardcolor-swap01").style.background = b;
     document.getElementById("cardcolor-swap02").style.background = b;
     document.getElementById("cardcolor-swap03").style.background = b;
     document.getElementById("subbutton").style.background = c;
     document.getElementById("learnmore-btn").style.background = c;
-    document.getElementsByClassName('pricenbr').style.color = c;
 
+    for (var i = 0; i < swapColor.length; i++) {
+        swapColor[i].style.color = c;
+        swapColor[i].style.borderColor = c;    
+    }
+    
+    for (var i = 0; i < joinBtn.length; i++) {
+        (function(index) {
+
+            joinBtn[index].addEventListener("mouseover", function() {
+                joinBtn[index].style.backgroundColor = c;
+                joinBtn[index].style.color = "white";
+            });
+
+            joinBtn[index].addEventListener("mouseout", function() {
+                joinBtn[index].style.backgroundColor = "";
+                joinBtn[index].style.color = c;
+              });
+
+        })(i);
+    }
 }
+// Reset Styles on Elements tag with class "reset-color".
+
+function resetPageStyles() {
+    var elementReset = document.getElementsByClassName("reset-color");
+    var initialStyles = [];
+  
+    for (var i = 0; i < elementReset.length; i++) {
+      initialStyles[i] = elementReset[i].style.cssText;
+      elementReset[i].style.cssText = '';
+    }
+}
+  
+var button = document.getElementById("resetstyle-btn");
+button.addEventListener('click', resetPageStyles);
+
 
 
 // ----------------------------------------- Scroll top button -------------------------------------------------]

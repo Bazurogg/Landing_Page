@@ -206,7 +206,7 @@ i.fa-gear.active {
 
 .color-patch.patch01 {
     background: radial-gradient(rgb(139,195, 245), #1294b8);
-    background-color: #1294b8;
+    background-color: #437fff;
 }
 
 .color-patch.patch02 {
@@ -884,9 +884,10 @@ p6 {
 .join-now{
     font-family: "Poppins";
     padding: 8px 108px;
-    border: 1px solid #437fff;
+    border: 1px solid;
+    border-color: #437fff;
     border-radius: 6px;
-    background-color: transparent;
+    background-color: white;
     color: #437fff;
     transition: 0.8s;
 }
@@ -894,8 +895,7 @@ p6 {
 .join-now:hover {
     cursor:pointer;
     background-color: #437fff;
-    color: white;
-
+    color: white;   
 }
 
 .optioncard-container {
