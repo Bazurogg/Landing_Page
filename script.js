@@ -54,6 +54,7 @@ function colors(z) {
     var b = a.background;
     var c = a.backgroundColor;
     var swapColor = document.getElementsByClassName("swap-color");
+    var swapPostItColor = document.getElementsByClassName("swapcolor-postit");
     var joinBtn = document.getElementsByClassName("join-now"); 
 
     document.getElementById("color-swap").style.background = b;
@@ -68,6 +69,10 @@ function colors(z) {
         swapColor[i].style.borderColor = c;    
     }
     
+    for (var i = 0; i < swapPostItColor.length; i++) {
+        swapPostItColor[i].style.background = c;
+    }
+  
     for (var i = 0; i < joinBtn.length; i++) {
         (function(index) {
 

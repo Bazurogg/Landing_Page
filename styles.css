@@ -864,7 +864,7 @@ p6 {
     top: -10px;
     right: -10px;
     font-size: 14px;
-    background-color: #437fff;
+    background: #437fff;
     border-radius: 10px;
 }
 
@@ -991,7 +991,15 @@ p7 {
     border: none;
     font-size: 16px;
     color: #1294b8;
+    transition: 0.8s;
 }
+
+.btn-readmore:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
 
 .blogcard-detail {
     position: absolute;
