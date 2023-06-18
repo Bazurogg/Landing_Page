@@ -46,13 +46,17 @@
 
     </div>
 
-    <div class="master-container">
+    <div class="master-container" id="masterctnr">
         
         <section id="homepage">
     
             <header>
+
                 <h1>Kucra</h1>
-                <nav>
+                <div class="navtoggle" id="toggle-nav" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav id="navbar-box">
                     <ul id="navtop"> 
                         <li><a href="#homepage">HOME</a></li>
                         <li><a href="#cardpage">FEATURES</a></li>
@@ -64,10 +68,22 @@
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
-                <div class="icones-container">
-                    <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f icon-fb icon-home white"></i></a>
-                    <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa-brands fa-twitter icon-home white"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram icon-home white"></i></a>
+
+                <div class="sociallink-container" id="sociallinkctnr">
+
+                    <div class="social-wraper" id="socialwrap" onclick="toggleLink()">
+                        <div class="socialicone-box">
+                            <i class="fa-solid fa-users" id="social-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="icones-container" id="iconectnr">
+                        <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f icon-fb icon-home white"></i></a>
+                        <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa-brands fa-twitter icon-home white"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram icon-home white"></i></a>
+                    </div>
+
+
                 </div>
             </header>
         
@@ -588,7 +604,7 @@
                 <p7>It is a long established fact that a reader will be of page when<br>established fact looking at its layout</p7>                
             </div>
 
-            <div class="blog-bloctnr">
+            <div class="blog-blocctnr">
 
                 <div class="bloc-01">
 

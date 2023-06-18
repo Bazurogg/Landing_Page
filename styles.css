@@ -172,9 +172,6 @@ i.fa-gear.active {
     top: 300px;
 }
 
-.colorpicker-container.active {
-    transition: width 0.8s;
-}
 
 .submenu-title {
     margin-top: 12px;
@@ -470,7 +467,7 @@ i.card-icon {
 }
 
 
-/*------------------------------------- T E A M / SECTION ---------------------------------------------*/
+/*------------------------------------- T E A M / S E C T I O N ---------------------------------------------*/
 
 .team-page {
     background-color: white;
@@ -611,7 +608,7 @@ span.ppl-post {
 }
 
 
-/*------------------------------------- P A R A L L A X / SECTION ---------------------------------------------*/
+/*------------------------------------- P A R A L L A X / S E C T I O N ---------------------------------------------*/
 
 
 #faq {
@@ -662,7 +659,7 @@ p6 {
     transform: translateY(-4px);
 }
 
-/*------------------------------------- C L I E N T / SECTION ---------------------------------------------*/
+/*------------------------------------- C L I E N T / S E C T I O N ---------------------------------------------*/
 
 
 .client-mainbloc {
@@ -707,7 +704,7 @@ p6 {
 }
 
 
-/*------------------------------------- P R I C I N G / SECTION ---------------------------------------------*/
+/*------------------------------------- P R I C I N G / S E C T I O N ---------------------------------------------*/
 
 .pricing-topbloc {
    display: flex;
@@ -1090,10 +1087,13 @@ p7 {
 }
 
 
-/*---------------------------------------------------------------------- M E D I A   Q U E R I E S ----------------------------------------------------------------------*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<o[  M E D I A   Q U E R I E S  ]o>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-/*------------------------------------- T A B L E T S ---------------------------------------------*/
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ T A B L E T S //////////////////////////////////////////////////////////*/
 
 
 @media only screen and (min-device-width : 768px)
@@ -1104,9 +1104,10 @@ and (orientation : portrait) {
     width: 100%;
 }
 
-
-
-
+.backtopbtn {
+    top: 970px;
+    left: 710px;
+}
 
 /*------------------------------------- H O M E   P A G E  ---------------------------------------------*/
 
@@ -1118,18 +1119,102 @@ header {
     align-items: center;
 }
 
+.reset-color.active {
+    filter: blur (50px);
+}
+
 h1 {
     font-size: 80px;
     margin: 0px;
 }
 
+#navtop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid white;
+    border-right: unset;
+    margin-top: 0;
+}
+
+#navbar-box {
+    position: absolute;
+    transform: translate(50vh, 13vw);
+    transition: all 0.4s ease-in;
+}
+
+#navbar-box.active {
+    transform: translate(30vh, 13vw);
+}
+
+.navtoggle {
+    position: absolute;
+    top: 4vh;
+    right: 7vw;
+}
+
+.fa-bars {
+    font-size: 30px;    
+}
+
 li {
     font-size: 22px;
+    margin-bottom: 46px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.sociallink-container {
+    position: absolute;
+    top:1vh;
+    left:1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid rgb(34, 34, 34);
+    border-radius: 10px;
+    height: fit-content;
+}
+
+
+.fa-users {
+    font-size: 20px;
+    color: silver;
+}
+
+.fa-users.active {
+    color: red;
+}
+
+.social-wraper {
+    width: 68px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(34, 34, 34);
+}
+
+.social-wraper.active {
+    background-color: unset;
 }
 
 .icones-container {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
     margin-right: 0;
+    /* border: 1px solid rgb(34, 34, 34); */
+    border-radius: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.icones-container.active {
+    height: 150px;
 }
 
 .backimage-container {
@@ -1138,11 +1223,17 @@ li {
 
 .icon-home {
     padding: 0 18px;
-    font-size: 50px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(34, 34, 34);;
 }
 
 .icon-home:hover, li:hover {
     opacity: 1
+}
+
+.fa-facebook-f {
+    margin-top: 15px;
 }
 
 .main-container {
@@ -1247,9 +1338,16 @@ p2 {
 
 /*------------------------------------- P R I C I N G ---------------------------------------------*/
 
+.learnmore {
+    margin: 0 150px;
+}
 
 .pricing-maincontnr {
     padding-top: 40px;
+}
+
+.pricing-bottextcontainer {
+    padding-top: 180px;
 }
 
 .pricing-topbloc {
@@ -1294,13 +1392,29 @@ p2 {
     height: fit-content;
 }
 
-.blog-bloctnr {
+.blog-blocctnr {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .blog-bloctnr {
     margin-top: 0;
+}
+
+.bloc-01 {
+    margin-top: 20px;
+}
+
+.bloc-01, .bloc-02 {
+    margin-bottom: 60px;
+}
+
+.iconefooter-wraper {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
 }
 
 }

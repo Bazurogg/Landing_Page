@@ -117,3 +117,26 @@ window.addEventListener("scroll", () => {
         scrollTopBtn.style.visibility = "hidden"
     }
 })
+
+
+// ----------------------------------------- Social Links Bar -------------------------------------------------]
+
+let linkBar = document.getElementById("iconectnr");
+let socialBtn = document.getElementById("socialwrap");
+let socialIcon =document.getElementById("social-icon");
+
+function toggleLink() {
+    linkBar.classList.toggle("active");
+    socialBtn.classList.toggle("active");
+    socialIcon.classList.toggle("active");
+}
+
+// ----------------------------------------- Nav Bar -------------------------------------------------]
+
+let navBar = document.getElementById("navbar-box");
+let bodyNavToggle = document.getElementById("color-swap");
+
+function toggleNav() {
+    navBar.classList.toggle("active");
+    bodyNavToggle.classList.toggle("active");
+}
