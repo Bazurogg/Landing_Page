@@ -1481,5 +1481,206 @@ i.ppl-social {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ P H O N E S //////////////////////////////////////////////////////////*/
 
 
-@media only screen and (min-device-width : 768px)
+@media only screen and (min-device-width : 375px)
 and (orientation : portrait) {
+
+    
+    
+    .master-container{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .backtopbtn {
+        top: 970px;
+        left: 710px;
+    }
+    .navtoggle {
+        visibility: visible;
+    }
+    
+    .social-wraper {
+        visibility: visible;
+    }
+
+    
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #homepage.active {
+    background-color: rgba(0,0,0,0.5);
+}
+#cardpage.active {
+    background: rgba(0,0,0,0.5);
+}
+#teampage.active {
+    background: rgba(0,0,0,0.5);
+}
+#faq.active {
+    background-color: rgba(0,0,0,0.5);
+}
+#clientpage.active {
+    background: rgba(0,0,0,0.5);
+}
+#pricingpage.active {
+    background: rgba(0,0,0,0.5);
+}
+#blogpage.active {
+    background: rgba(0,0,0,0.5);
+} */
+
+
+h1 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+#navtop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid white;
+    border-right: unset;
+    margin-top: 0;
+}
+
+#navbar-box {
+    position: absolute;
+    transform: translate(60vh, 13vw);
+    transition: all 0.4s ease-in;
+}
+
+#navbar-box.active {
+    transform: translate(30vh, 13vw);
+}
+
+.navtoggle {
+    position: absolute;
+    top: 3vh;
+    right: 27vw;
+}
+
+.fa-bars {
+    font-size: 30px;    
+}
+
+li {
+    font-size: 22px;
+    margin-bottom: 46px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.sociallink-container {
+    position: absolute;
+    top:1vh;
+    left:1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid rgb(34, 34, 34);
+    border-radius: 10px;
+    height: fit-content;
+}
+
+
+.fa-users {
+    font-size: 20px;
+    color: silver;
+}
+
+.fa-users.active {
+    color: red;
+}
+
+.social-wraper {
+    width: 68px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(34, 34, 34);
+}
+
+.social-wraper.active {
+    background-color: unset;
+}
+
+.icones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
+    /* border: 1px solid rgb(34, 34, 34); */
+    border-radius: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.icones-container.active {
+    height: 150px;
+}
+
+.backimage-container {
+    display: none;
+}
+
+.icon-home {
+    padding: 0 18px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(34, 34, 34);;
+}
+
+.icon-home:hover, li:hover {
+    opacity: 1
+}
+
+.fa-facebook-f.icon-home {
+    margin-top: 15px;
+}
+
+.main-container {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenttext-container {
+    margin: 0;
+    padding: 0;
+}
+
+p1 {
+    padding: 0 260px;
+    text-align: center;
+    font-size: 20px;
+}
+
+p2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sub-btn {
+    padding: 27px 30px;
+    font-size: 20px;
+}
+
+#email-submit {
+    font-size: 30px;
+}
+}
