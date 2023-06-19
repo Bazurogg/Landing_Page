@@ -134,9 +134,7 @@ function toggleLink() {
 // ----------------------------------------- Nav Bar -------------------------------------------------]
 
 let navBar = document.getElementById("navbar-box");
-let bodyNavToggle = document.getElementById("color-swap");
 
 function toggleNav() {
     navBar.classList.toggle("active");
-    bodyNavToggle.classList.toggle("active");
 }
