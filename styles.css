@@ -279,9 +279,12 @@ li:hover {
     transition-timing-function: ease-out;
 }
 
+#navbar-box {
+    margin-right: 250px;
+}
+
 
 .icones-container {
-    margin-top: 25px;
     margin-right: 120px;   
 }
 
@@ -1177,7 +1180,7 @@ h1 {
 
 #navbar-box {
     position: absolute;
-    transform: translate(50vh, 13vw);
+    transform: translate(60vh, 13vw);
     transition: all 0.4s ease-in;
 }
 
@@ -1270,7 +1273,7 @@ li {
     opacity: 1
 }
 
-.fa-facebook-f {
+.fa-facebook-f.icon-home {
     margin-top: 15px;
 }
 
@@ -1358,6 +1361,23 @@ p2 {
     margin-bottom: 28px;
 }
 
+.icon-container {
+    opacity: 1;
+    top: -6px;
+    left: -64px;
+}
+
+.cardpeople-image {
+    overflow: visible;
+}
+
+.icon-ppl{
+    margin-top: 40px;
+}
+
+i.ppl-social {
+    font-size: 40px;
+}
 
 /*------------------------------------- C L I E N T ---------------------------------------------*/
 
@@ -1456,3 +1476,10 @@ p2 {
 }
 
 }
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ P H O N E S //////////////////////////////////////////////////////////*/
+
+
+@media only screen and (min-device-width : 768px)
+and (orientation : portrait) {
