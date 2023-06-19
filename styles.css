@@ -1115,22 +1115,27 @@ p7 {
 @media only screen and (min-device-width : 768px)
 and (orientation : portrait) {
 
+body {
+    overflow: hidden;
+}
 
 .master-container{
     width: 100%;
+    position: relative;
 }
 
 .backtopbtn {
-    top: 970px;
-    left: 710px;
+    z-index: 9;
+    top: 94vh;
+    left: 90vw;
 }
-.navtoggle {
-    visibility: visible;
-}
+
 
 .social-wraper {
     visibility: visible;
 }
+
+
 /*------------------------------------- H O M E   P A G E  ---------------------------------------------*/
 
 
@@ -1165,7 +1170,7 @@ header {
 
 
 h1 {
-    font-size: 80px;
+    font-size: 150px;
     margin: 0px;
 }
 
@@ -1173,25 +1178,31 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid white;
+    border: 1px solid rgb(34, 34, 34);
     border-right: unset;
     margin-top: 0;
 }
 
 #navbar-box {
-    position: absolute;
-    transform: translate(60vh, 13vw);
-    transition: all 0.4s ease-in;
+    z-index: 11;
+    position: fixed;
+    top: 95px;
+    right: -409px;
+    transition: 0.4s;
+    /* transform: translate(60vh, 13vw);
+    transition: all 0.4s ease-in; */
 }
 
 #navbar-box.active {
-    transform: translate(30vh, 13vw);
+
+    right: -252px;
 }
 
 .navtoggle {
-    position: absolute;
+    visibility: visible;
+    position: fixed;
     top: 4vh;
-    right: 7vw;
+    right: 6vw;
 }
 
 .fa-bars {
@@ -1203,12 +1214,14 @@ li {
     margin-bottom: 46px;
     margin-top: 20px;
     padding-left: 30px;
+    color: rgb(34, 34, 34);
 }
 
 .sociallink-container {
-    position: absolute;
-    top:1vh;
-    left:1vw;
+    z-index: 10;
+    position: fixed;
+    top:3vh;
+    left:2.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1216,7 +1229,6 @@ li {
     border-radius: 10px;
     height: fit-content;
 }
-
 
 .fa-users {
     font-size: 20px;
@@ -1233,7 +1245,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: rgb(34, 34, 34);
 }
 
@@ -1251,7 +1263,7 @@ li {
     border-radius: 10px;
     height: 0;
     overflow: hidden;
-    transition: height 0.3s ease;
+    transition: height 0.2s ease;
 }
 
 .icones-container.active {
@@ -1294,9 +1306,9 @@ main {
 }
 
 p1 {
-    padding: 0 90px;
+    padding: 0 43px;
     text-align: center;
-    font-size: 75px;
+    font-size: 60px;
 }
 
 p2 {
@@ -1405,7 +1417,7 @@ i.ppl-social {
 }
 
 .pricing-bottextcontainer {
-    padding-top: 180px;
+    padding-top: 120px;
 }
 
 .pricing-topbloc {
@@ -1443,6 +1455,12 @@ i.ppl-social {
 }
 
 
+/*------------------------------------- B L A N K  S P A C E ---------------------------------------------*/
+#blankspace {
+    
+    height: 80%;
+}
+
 /*------------------------------------- B L O G ---------------------------------------------*/
 
 
@@ -1455,10 +1473,7 @@ i.ppl-social {
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
-}
-
-.blog-bloctnr {
-    margin-top: 0;
+    margin-top: 40px;
 }
 
 .bloc-01 {
@@ -1481,26 +1496,27 @@ i.ppl-social {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ P H O N E S //////////////////////////////////////////////////////////*/
 
 
-@media only screen and (min-device-width : 416px)
+/* @media only screen and (min-device-width : 375px)
 and (orientation : portrait) {
 
     
     
-    .master-container{
-        width: 100%;
-    }
-    
-    .backtopbtn {
-        top: 970px;
-        left: 710px;
-    }
-    .navtoggle {
-        visibility: visible;
-    }
-    
-    .social-wraper {
-        visibility: visible;
-    }
+.master-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.backtopbtn {
+    top: 970px;
+    left: 710px;
+}
+.navtoggle {
+    visibility: visible;
+}
+
+.social-wraper {
+    visibility: visible;
+}
 
     
 
@@ -1508,9 +1524,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-/* #homepage.active {
+/* /* #homepage.active {
     background-color: rgba(0,0,0,0.5);
 }
 #cardpage.active {
@@ -1533,7 +1549,7 @@ header {
 } */
 
 
-h1 {
+/* h1 {
     font-size: 20px;
     margin: 0px;
 }
@@ -1617,7 +1633,7 @@ li {
     margin-top: 0;
     margin-right: 0;
     /* border: 1px solid rgb(34, 34, 34); */
-    border-radius: 10px;
+    /* border-radius: 10px;
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
@@ -1682,4 +1698,5 @@ p2 {
 #email-submit {
     font-size: 30px;
 }
-}
+
+} */
