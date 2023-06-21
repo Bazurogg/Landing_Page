@@ -279,10 +279,6 @@ li:hover {
     transition-timing-function: ease-out;
 }
 
-#navbar-box {
-    margin-right: 250px;
-}
-
 
 .icones-container {
     margin-right: 120px;   
@@ -1137,7 +1133,6 @@ body {
 
 section {
     width: auto;
-    height: 0%;
 }
 
 
@@ -1192,7 +1187,7 @@ h1 {
     z-index: 11;
     position: fixed;
     top: 80px;
-    right: -409px;
+    right: -140px;
     width: 21%;
     transition: width 0.4s;
     background-color: #d7bcbc5c;
@@ -1205,13 +1200,15 @@ h1 {
 }
 
 #navbar-box.active {
-    width: 110%;
+    width: 108%;
 }
 
 .navtoggle {
+    width: fit-content;
     visibility: visible;
     position: relative;
     right: 66px;
+    top: 30px;
     background-color: rgb(34, 34, 34);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
