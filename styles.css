@@ -1659,17 +1659,41 @@ p1{
 
 /*------------------------------------- C A R D   P A G E  ---------------------------------------------*/
 
+#cardpage {
+    height: 780px;
+}
 
 .cards-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .title-cardsection {
     font-size: 25px;
 }
 
+.card {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.card-content {
+    padding-top: 10px;
+}
+
+
+.p-card {
+    position: relative;
+    top: -103px;
+    text-align: justify;
+    font-size: 13px;
+    visibility: hidden;
+}
 
 
 /*------------------------------------- T E A M   P A G E  ---------------------------------------------*/
