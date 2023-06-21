@@ -1175,6 +1175,9 @@ h1 {
 }
 
 .nav-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 20;
     position: fixed;
     right: 0%;
@@ -1352,6 +1355,10 @@ p2 {
 
 
 /*------------------------------------- C A R D   P A G E ---------------------------------------------*/
+
+#cardpage {
+    height: 1040px;
+}
 
 .cards-container {
     margin: 0;
