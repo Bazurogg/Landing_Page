@@ -89,6 +89,7 @@ function colors(z) {
         })(i);
     }
 }
+
 // Reset Styles on Elements tag with class "reset-color".
 
 function resetPageStyles() {
@@ -108,30 +109,61 @@ button.addEventListener('click', resetPageStyles);
 
 // ----------------------------------------- Scroll top button -------------------------------------------------]
 
+
+
+// const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > window.innerHeight) {
+//     scrollTopBtn.style.display = 'block';
+//   } else {
+//     scrollTopBtn.style.display = 'none';
+//   }
+// });
+
+// scrollTopBtn.addEventListener('click', () => {
+//     console.log("hello")
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+    
+//   });
+// });
+
 const scrollTopBtn = document.getElementById("totopbtn");
 
-// window.addEventListener("scroll", () => {
-//     if (window.scrollY > 200
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200
 
-//     ) {
-//         scrollTopBtn.style.visibility = "visible"
-//     } else {
-//         scrollTopBtn.style.visibility = "hidden"
-//     }
-// })
-
-// Fonction pour afficher ou cacher le bouton en fonction de la position de défilement
-function toggleBackToTopButton() {
-    const backToTopButton = document.getElementById("totopbtn");
-    if (window.scrollY > 300) { // Par exemple, afficher le bouton après avoir défilé de 300 pixels
-      backToTopButton.style.display = 'block';
+    ) {
+        scrollTopBtn.style.visibility = "visible"
     } else {
-      backToTopButton.style.display = 'none';
+        scrollTopBtn.style.visibility = "hidden"
     }
+})
+
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
-  
-  // Ajouter un écouteur d'événement pour le défilement
-  window.addEventListener('scroll', toggleBackToTopButton);
+}
+
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     console.log("Hello")
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+
+// }
+
 
 // ----------------------------------------- Social Links Bar -------------------------------------------------]
 
