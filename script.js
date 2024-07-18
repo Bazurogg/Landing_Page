@@ -110,14 +110,28 @@ button.addEventListener('click', resetPageStyles);
 
 const scrollTopBtn = document.getElementById("totopbtn");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        scrollTopBtn.style.visibility = "visible"
-    } else {
-        scrollTopBtn.style.visibility = "hidden"
-    }
-})
+// window.addEventListener("scroll", () => {
+//     if (window.scrollY > 200
 
+//     ) {
+//         scrollTopBtn.style.visibility = "visible"
+//     } else {
+//         scrollTopBtn.style.visibility = "hidden"
+//     }
+// })
+
+// Fonction pour afficher ou cacher le bouton en fonction de la position de défilement
+function toggleBackToTopButton() {
+    const backToTopButton = document.getElementById("totopbtn");
+    if (window.scrollY > 300) { // Par exemple, afficher le bouton après avoir défilé de 300 pixels
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  }
+  
+  // Ajouter un écouteur d'événement pour le défilement
+  window.addEventListener('scroll', toggleBackToTopButton);
 
 // ----------------------------------------- Social Links Bar -------------------------------------------------]
 
