@@ -95,7 +95,45 @@ section {
 background-color: #555;
 }
 
-.backtopbtn {
+
+/* ______________________________________________________ NEW BUTTON BCKTOTOP ______________________________________________________ */
+
+.scrollToTopBtn {
+    
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+  
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+  
+.scrollToTopBtn.showBtn {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ______________________________________________________ NEW BUTTON BCKTOTOP ______________________________________________________ */
+
+
+
+/* ______________________________________________________ OLD BUTTON BCKTOTOP ______________________________________________________ */
+/* .backtopbtn {
     position: fixed;
     display: flex;
     top: 800px;
@@ -110,13 +148,13 @@ background-color: #555;
     border-radius: 10px;
     transition: 0.8s;
     text-decoration: none;
-}
+} */
  
 /* #backtopbtn.active {
     visibility: hidden;
 } */
 
-.backtopbtn:hover {
+/* .backtopbtn:hover {
     cursor: pointer;
     background-color: rgb(49, 49, 49);
 }
@@ -129,7 +167,10 @@ i.backtotop-btn {
     font-size: 30px;
     color: rgb(49, 49, 49);
     transition: 0.8s;
-}
+} */
+/* ______________________________________________________ OLD BUTTON BCKTOTOP ______________________________________________________ */
+
+
 
 .gear-wraper {
     /* position: fixed;

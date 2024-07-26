@@ -4,6 +4,10 @@ const footerLink03 = document.getElementById("footerlink-03");
 const sepFooter01 = document.getElementById("footersep-01");
 const sepFooter02 = document.getElementById("footersep-02");
 
+var target = document.querySelector(".footer");
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+var rootElement = document.documentElement;
+
 // ----------------------------------------- Animation credits footer -------------------------------------------------]
 
 footerLink01.addEventListener("mouseenter", e => {
@@ -107,7 +111,58 @@ button.addEventListener('click', resetPageStyles);
 
 
 
-// ----------------------------------------- Scroll top button -------------------------------------------------]
+// ----------------------------------------- Scroll top button (NEW VERSION) -------------------------------------------------]
+
+
+// We want to create a function that will be called when that element is intersected
+function callback(entries, observer) {
+
+    // The callback will return an array of entries, even if you are only observing a single item
+    entries.forEach((entry) => {
+  
+      if (entry.isIntersecting) {
+  
+        // Show button
+        scrollToTopBtn.classList.add("showBtn");
+  
+      } else {
+  
+        // Hide button
+        scrollToTopBtn.classList.remove("showBtn");
+  
+      }
+  
+    });
+
+}
+  
+// Fonction pour le retour de haut de page.
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    function scrollToTop() {
+        console.log("Scrolling to top...");
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    scrollToTopBtn.addEventListener('click', function() {
+        console.log("Button clicked");
+        scrollToTop();
+    });
+
+});
+
+let observer = new IntersectionObserver(callback);
+
+observer.observe(target);
+  
+// ----------------------------------------- Scroll top button (NEW VERSION) -------------------------------------------------]
+
+
+// ----------------------------------------- Scroll top button (OLD VERSION) -------------------------------------------------]
 
 
 
@@ -130,31 +185,31 @@ button.addEventListener('click', resetPageStyles);
 //   });
 // });
 
-const scrollTopBtn = document.getElementById("totopbtn");
+// const scrollTopBtn = document.getElementById("totopbtn");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200
+// window.addEventListener("scroll", () => {
+//     if (window.scrollY > 200
 
-    ) {
-        scrollTopBtn.style.visibility = "visible"
-    } else {
-        scrollTopBtn.style.visibility = "hidden"
-    }
-})
+//     ) {
+//         scrollTopBtn.style.visibility = "visible"
+//     } else {
+//         scrollTopBtn.style.visibility = "hidden"
+//     }
+// })
 
-// Get the button
-let mybutton = document.getElementById("myBtn");
+// // Get the button
+// let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
 // // When the user clicks on the button, scroll to the top of the document
 // function topFunction() {
@@ -163,6 +218,8 @@ function scrollFunction() {
 //   document.documentElement.scrollTop = 0;
 
 // }
+
+// ----------------------------------------- Scroll top button (OLD VERSION) -------------------------------------------------]
 
 
 // ----------------------------------------- Social Links Bar -------------------------------------------------]
