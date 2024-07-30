@@ -236,6 +236,32 @@ function toggleLink() {
 
 // ----------------------------------------- Nav Bar -------------------------------------------------]
 
+
+// // Défilement dynamique vers les sections appropriées.
+document.addEventListener('DOMContentLoaded', function () {
+    // Sélectionner tous les liens dans la barre de navigation
+    const navLinks = document.querySelectorAll('#navbar-box a');
+  
+    // Ajouter un écouteur d'événement pour chaque lien
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); // Empêcher le comportement par défaut du lien
+  
+        // Obtenir la section cible par son ID
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+  
+        // Défilement fluide vers la section cible
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+
+
+
 let navBar = document.getElementById("navbar-box");
 
 function toggleNav() {
