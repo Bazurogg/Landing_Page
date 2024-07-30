@@ -237,7 +237,7 @@ function toggleLink() {
 // ----------------------------------------- Nav Bar -------------------------------------------------]
 
 
-// // Défilement dynamique vers les sections appropriées.
+// // Défilement fluide vers les sections appropriées.
 document.addEventListener('DOMContentLoaded', function () {
     // Sélectionner tous les liens dans la barre de navigation
     const navLinks = document.querySelectorAll('#navbar-box a');
@@ -260,10 +260,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
-
 let navBar = document.getElementById("navbar-box");
 
+
 function toggleNav() {
+
     navBar.classList.toggle("active");
+
 }

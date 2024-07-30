@@ -100,9 +100,10 @@ background-color: #555;
 
 .scrollToTopBtn {
     
-    background-color: rgb(255, 255, 255);
-    border: none;
-    color: white;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    color: silver;
     cursor: pointer;
     font-size: 18px;
     line-height: 48px;
