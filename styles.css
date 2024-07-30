@@ -122,6 +122,11 @@ background-color: #555;
     /* and a transition */
     transition: all 0.5s ease;
 }
+
+/* Animation au survol du bouton */
+#scrollToTopBtn:hover {
+    transform: translateY(-6px); /* Déplacement de 5 pixels vers le haut */
+}
   
 .scrollToTopBtn.showBtn {
     display: block;
